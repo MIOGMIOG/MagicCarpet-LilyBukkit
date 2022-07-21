@@ -20,6 +20,13 @@
             <id>bukkit-repo</id>
             <url>http://artifactory.xzkingzxburnzx.tk/repo/</url>
         </repository>
+        <repository>
+          <id>github</id>
+          <url>https://maven.pkg.github.com/VLadg24YT/LilyBukkit-API</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
     </repositories>
     
     <ciManagement>
