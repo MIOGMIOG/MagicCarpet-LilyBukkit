@@ -13,35 +13,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <activeProfiles>
-      <activeProfile>github</activeProfile>
-    </activeProfiles>
-    <profiles>
-      <profile>
-        <id>github</id>
-        <repositories>
-          <repository>
-            <id>github</id>
-            <url>https://maven.pkg.github.com/Vladg24YT/LilyBukkit-API</url>
-            <snapshots>
-              <enabled>true</enabled>
-            </snapshots>
-            <releases>
-              <enabled>true</enabled>
-            </releases>
-          </repository>
-        </repositories>
-      </profile>
-    </profiles>
-    
-    <servers>
-      <server>
-        <id>github</id>
-        <username>${env.USER_NAME}</username>
-        <password>${env.ACCESS_TOKEN}</password>
-      </server>
-    </servers>
-    
+  
     <dependencies>
         <dependency>
             <groupId>ru.vladthemountain</groupId>
