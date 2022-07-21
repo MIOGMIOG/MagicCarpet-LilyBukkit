@@ -1,0 +1,43 @@
+name: MagicCarpet
+main: net.digiex.magiccarpet.MagicCarpet
+version: 2.0.2
+dev-url: http://dev.bukkit.org/server-mods/magiccarpet/
+website: http://dev.bukkit.org/server-mods/magiccarpet/
+authors: [Android, Celtic Minstrel, xzKinGzxBuRnzx]
+commands:
+  magiccarpet:
+    description: Take yourself wonder by wonder on a carpet made of glass.
+    aliases: [mc]
+    usage: /<command> [size]
+  magiclight:
+    description: A bright light for your carpet ride.
+    aliases: [ml]
+    usage: /<command> [ring|centre|center]
+  magicreload:
+    description: Reloads the MagicCarpet config file.
+    aliases: [mr]
+    usage: /<command>
+  carpetswitch:
+    description: Allows the user to switch methods for going down with the carpet.
+    aliases: [mcs]
+    usage: /<command>
+permissions:
+  magiccarpet.mc:
+    description: Take yourself wonder by wonder on a carpet made of glass.
+    default: op
+  magiccarpet.ml:
+    description: Allows a bright light for your carpet ride.
+    default: op
+  magiccarpet.mcs:
+    description: Allows the user to switch methods for going down with the carpet.
+    default: op
+  magiccarpet.mr:
+    description: Allows reloading of the config file.
+    default: op
+  magiccarpet.*:
+    description: Allows access to all MagicCarpet commands.
+    children:
+      magiccarpet.mc: true
+      magiccarpet.ml: true
+      magiccarpet.mcs: true
+      magiccarpet.mr: true
