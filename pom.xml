@@ -17,10 +17,6 @@
   
     <repositories>
         <repository>
-            <id>bukkit-repo</id>
-            <url>http://artifactory.xzkingzxburnzx.tk/repo/</url>
-        </repository>
-        <repository>
             <id>github</id>
             <url>https://maven.pkg.github.com</url>
             <snapshots>
